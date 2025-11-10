@@ -1,0 +1,30 @@
+import boto3
+from botocore.exceptions import ClientError
+
+# Replace with your actual credentials (for demo/testing only)
+AWS_ACCESS_KEY = 'YOUR_AWS_ACCESS_KEY'
+AWS_SECRET_KEY = 'YOUR_AWS_SECRET_KEY'
+REGION = 'us-east-1'
+BUCKET_NAME = 'your-unique-bucket-name-12345'
+
+def create_bucket():
+    try:
+        s3 = boto3.client(
+            's3',
+            aws_access_key_id=AWS_ACCESS_KEY,
+            aws_secret_access_key=AWS_SECRET_KEY,
+            region_name=REGION
+        )
+
+        # Create the bucket
+        s3.create_bucket(
+            Bucket=BUCKET_NAME,
+            CreateBucketConfiguration={'LocationConstraint': REGION}
+        )
+        print(f"✅ Bucket '{BUCKET_NAME}' created successfully in region '{REGION}'.")
+
+    except ClientError as e:
+        print(f"❌ Error creating bucket: {e}")
+
+if __name__ == "__main__":
+    create_bucket()
