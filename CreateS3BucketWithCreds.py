@@ -4,6 +4,12 @@ from botocore.exceptions import ClientError
 # Replace with your actual credentials (for demo/testing only)
 AWS_ACCESS_KEY = 'AKIAEXAMPLE1234567890'
 AWS_SECRET_KEY = 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY'
+GENERIC_API_Key = 'AKIAIOSFODNN7EXAMPLE'
+Private_Key = '-----BEGIN PRIVATE KEY-----
+MIIEvQIBADANBgkqhkiG9w0BAQEFAASCAmMwggJfAgEAAoGBALeXAMPLEKEYDATA
+...
+...
+-----END PRIVATE KEY-----'
 REGION = 'us-east-1'
 BUCKET_NAME = 'your-unique-bucket-name-12345'
 
