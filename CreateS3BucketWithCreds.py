@@ -2,8 +2,8 @@ import boto3
 from botocore.exceptions import ClientError
 
 # Replace with your actual credentials (for demo/testing only)
-AWS_ACCESS_KEY = 'YOUR_AWS_ACCESS_KEY'
-AWS_SECRET_KEY = 'YOUR_AWS_SECRET_KEY'
+AWS_ACCESS_KEY = 'AKIAEXAMPLE1234567890'
+AWS_SECRET_KEY = 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY'
 REGION = 'us-east-1'
 BUCKET_NAME = 'your-unique-bucket-name-12345'
 
