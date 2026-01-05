@@ -1,7 +1,7 @@
 import boto3
 from botocore.exceptions import ClientError
 
-# Replace with your actual credentials (for demo/testing only)
+# Replace 5-jan with your actual credentials (for demo/testing only)
 AWS_ACCESS_KEY = 'AKIAEXAMPLE1234567890'
 AWS_SECRET_KEY = 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY'
 GENERIC_API_Key = 'AKIAIOSFODNN7EXAMPLE'
