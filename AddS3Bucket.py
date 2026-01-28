@@ -14,5 +14,5 @@ def create_s3_bucket(bucket_name, region=None):
     except ClientError as e:
         print(f"❌ Error: {e}")
 
-# Example usage
+# Example usage one
 create_s3_bucket('my-unique-bucket-name-12345', region='us-east-1')
